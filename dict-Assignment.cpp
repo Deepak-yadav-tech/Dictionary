@@ -67,6 +67,12 @@ int main() {
 
             }
 
+              if (res.empty()) {
+        cout << "Suggestions: []" << endl;
+        continue;
+    }
+
+
             sort(res.begin(), res.end(), compareWords);
             cout << "Suggestions:[";
 
